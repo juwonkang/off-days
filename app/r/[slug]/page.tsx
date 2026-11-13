@@ -73,7 +73,7 @@ export default async function RoutePage({ params }: Props) {
         {/* 낮 */}
         <section className="px-5 pb-10 pt-14 sm:px-8">
           <div className="mx-auto max-w-3xl">
-            <PartTitle en="Day" ko="오전 ~ 오후 · 더위 피해서 움직이기" />
+            <PartTitle en="Day" ko={r.dayLabel ?? "오전 ~ 오후 · 더위 피해서 움직이기"} />
             <ol>{day.map((s, i) => <StopItem key={s.time} s={s} last={i === day.length - 1 && night.length === 0} />)}</ol>
           </div>
         </section>
@@ -82,7 +82,7 @@ export default async function RoutePage({ params }: Props) {
         {night.length > 0 && (
           <section className="bg-night px-5 pb-16 pt-20 text-white sm:px-8">
             <div className="mx-auto max-w-3xl">
-              <PartTitle en="Night" ko="노을 ~ 밤 · 이 루트의 메인" dark />
+              <PartTitle en="Night" ko={r.nightLabel ?? "노을 ~ 밤 · 이 루트의 메인"} dark />
               <ol>{night.map((s, i) => <StopItem key={s.time} s={s} dark last={i === night.length - 1} />)}</ol>
             </div>
           </section>

@@ -98,9 +98,9 @@ export default async function CountryPage({ params }: Props) {
               <Reveal>
                 <p className="font-serif text-2xl italic text-lime">One-day route</p>
                 <h2 className="mt-2 text-4xl font-extrabold leading-tight tracking-[-0.04em] sm:text-5xl">
-                  아침 9시 반부터
+                  {c.route?.headline?.[0] ?? "아침 9시 반부터"}
                   <br />
-                  밤 10시까지, {stops.length}곳
+                  {c.route?.headline?.[1] ?? "밤 10시까지"}, {stops.length}곳
                 </h2>
                 <p className="mt-5 max-w-md text-[17px] leading-relaxed text-white/65">
                   시간대별 동선, 역 출구 번호, 입구 위치, 예산표까지 정리한 전체 루트는

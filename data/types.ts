@@ -53,6 +53,9 @@ export type Country = {
     stops: Stop[];
     budget: BudgetRow[];
     checklist: string[];
+    headline?: [string, string]; // 나라 페이지 루트 소개 제목 두 줄
+    dayLabel?: string; // 루트 페이지 낮 구간 설명
+    nightLabel?: string; // 루트 페이지 밤 구간 설명
     updated: string;
   };
 };

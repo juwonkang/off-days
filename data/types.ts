@@ -56,6 +56,7 @@ export type Country = {
     headline?: [string, string]; // 나라 페이지 루트 소개 제목 두 줄
     dayLabel?: string; // 루트 페이지 낮 구간 설명
     nightLabel?: string; // 루트 페이지 밤 구간 설명
+    mapList?: string; // 구글맵 저장 목록 공유 링크
     updated: string;
   };
 };

@@ -76,6 +76,7 @@ export const batam: Country = {
     headline: ["싱가포르에서 배 타고,", "인도네시아 1박"],
     dayLabel: "이동 · 페리부터 숙소까지",
     nightLabel: "밤 · 나고야 푸드코트",
+    mapList: "https://maps.app.goo.gl/YXwZueDLHsW41qYk6",
     summary: ["⛴ 하버프론트에서 페리 50분", "🛂 도착비자는 현금으로", "🛵 이동은 그랩 오토바이 500원"],
     stops: [
       {

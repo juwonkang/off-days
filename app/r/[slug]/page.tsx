@@ -116,6 +116,15 @@ export default async function RoutePage({ params }: Props) {
               </ul>
             </Reveal>
           </div>
+          {r.mapList && (
+            <a href={r.mapList} target="_blank" rel="noreferrer" className="mx-auto mt-4 flex max-w-3xl items-center justify-between gap-4 rounded-[28px] bg-lime p-6 transition hover:-translate-y-0.5">
+              <span>
+                <span className="block text-lg font-extrabold">🗺 제가 저장한 장소 전부 구글맵으로</span>
+                <span className="mt-1 block text-sm text-ink-2">숙소·카페·푸드코트 다 찍어둔 목록이에요. 저장해서 그대로 쓰세요</span>
+              </span>
+              <ArrowUpRight className="size-5 shrink-0" />
+            </a>
+          )}
           <div className="mx-auto mt-10 max-w-3xl rounded-[28px] border border-dashed border-ink/25 p-7 text-center">
             <p className="text-lg font-bold">도움 됐으면 저장하고, 같이 갈 사람한테 공유해주세요 ✈️</p>
             <p className="mt-1 text-sm text-muted">가격·운영시간은 {r.updated} 공식 홈페이지 기준이에요. 가기 전에 한 번 더 확인하세요.</p>

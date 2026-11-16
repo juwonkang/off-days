@@ -1,0 +1,161 @@
+import type { Country } from "../types";
+
+const img = (name: string) => `/images/batam/${name}.jpg`;
+
+// TODO 표시된 곳은 직접 확인해서 채워주세요
+
+export const batam: Country = {
+  slug: "batam",
+  name: "바탐",
+  nameEn: "Batam",
+  flag: "🇮🇩",
+  status: "live",
+  cover: { src: img("beach"), alt: "바탐 숙소 앞 바다" },
+  tagline: "싱가포르는 하루면 충분, 남은 하루는 배 타고 인도네시아",
+  period: "2026.04 · 싱가포르에서 1박",
+  leave: "싱가포르 일정 중 하루",
+  chips: ["페리 50분", "숙소 1박 3만원대", "그랩 한 번 500원"],
+  reelUrl: "https://www.instagram.com/juwon_ick/reels/", // TODO 바탐 릴스 주소로
+  facts: [
+    { label: "페리", value: "50분", note: "하버프론트 ↔ 바탐센터" },
+    { label: "왕복 페리", value: "S$85.75", note: "온라인 예매 · 실제 결제" },
+    { label: "숙소 1박", value: "₩37,840", note: "부킹닷컴 · 앞이 바로 바다" },
+    { label: "시차", value: "-1시간", note: "바탐이 싱가포르보다 1시간 느려요" },
+  ],
+  tips: [
+    {
+      title: "싱가포르 하버프론트에서 페리",
+      body: "하버프론트 터미널에서 바탐센터행 페리. 왕복 S$85.75, 온라인으로 미리 예매했어요.",
+      photo: { src: img("terminal"), alt: "하버프론트 페리 터미널" },
+    },
+    {
+      title: "내리면 도착비자부터",
+      body: "입국심사 줄 서기 전에 도착비자(VOA) 카운터에서 현금으로 결제. 7일짜리 Rp250,000.",
+      tone: "warn",
+      photo: { src: img("voa"), alt: "도착비자 카운터" },
+    },
+    {
+      title: "입국신고서는 미리 온라인",
+      body: "All Indonesia 입국신고서는 도착 3일 전부터 온라인으로 작성할 수 있어요. 배 타기 전에 해두면 편해요.",
+      photo: { src: img("ferry-wake"), alt: "페리 뒤로 이는 물살" },
+    },
+    {
+      title: "이동은 그랩 오토바이",
+      body: "한 번 타는 데 7,200루피아(약 500원). 헬멧 주니까 그냥 타면 돼요.",
+      photo: { src: img("grab"), alt: "그랩 오토바이 타고 가는 길" },
+    },
+    {
+      title: "밤엔 나고야 푸드코트",
+      body: "야외 라이브 공연에 현지인들로 꽉 차요. 그 사이에서 맥주 한 병이 바탐 밤 코스.",
+      photo: { src: img("nagoya"), alt: "나고야 푸드코트" },
+    },
+    {
+      title: "바다 앞 카페 TNTREM",
+      body: "숙소 근처 바닷가 카페. 뷰는 최고인데 음식이 진짜 매워요. 맵찔이는 주문할 때 꼭 말하기.",
+      tone: "warn",
+      photo: { src: img("cafe"), alt: "바다 앞 카페 TNTREM" },
+    },
+  ],
+  gallery: [
+    { src: img("sea"), alt: "페리에서 본 에메랄드 바다", caption: "페리에서 본 바다" },
+    { src: img("beach"), alt: "숙소 앞 바다", caption: "숙소 앞이 바로 바다" },
+    { src: img("hotel"), alt: "숙소 로비", caption: "1박 3만원대 숙소" },
+    { src: img("nagoya"), alt: "나고야 푸드코트", caption: "나고야 푸드코트" },
+    { src: img("return-ferry"), alt: "돌아오는 페리", caption: "싱가포르로 돌아가는 길" },
+    { src: img("grab"), alt: "그랩 오토바이", caption: "그랩 오토바이" },
+  ],
+  route: {
+    slug: "bt-0417-x9p3",
+    title: "싱가포르에서 바탐 1박",
+    updated: "2026.11",
+    headline: ["싱가포르에서 배 타고,", "인도네시아 1박"],
+    dayLabel: "이동 · 페리부터 숙소까지",
+    nightLabel: "밤 · 나고야 푸드코트",
+    summary: ["⛴ 하버프론트에서 페리 50분", "🛂 도착비자는 현금으로", "🛵 이동은 그랩 오토바이 500원"],
+    stops: [
+      {
+        time: "출발",
+        title: "하버프론트 페리 터미널",
+        area: "싱가포르 HarbourFront",
+        body: "바탐센터행 페리 탑승. 왕복 표를 온라인으로 미리 예매해두면 터미널에서 바로 체크인만 하면 돼요.",
+        photos: [
+          { src: img("terminal"), alt: "하버프론트 터미널" },
+          { src: img("ferry-wake"), alt: "페리 물살" },
+        ],
+        price: "왕복 S$85.75",
+        tips: ["All Indonesia 입국신고서는 도착 3일 전부터 온라인 작성 가능"],
+        map: "HarbourFront Centre Ferry Terminal",
+        move: { icon: "walk", text: "페리로 약 50분 · 도착하면 시계 1시간 뒤로" },
+      },
+      {
+        time: "도착",
+        title: "바탐센터 · 도착비자",
+        area: "Batam Centre Ferry Terminal",
+        body: "내리면 입국심사 전에 도착비자(VOA) 카운터부터. 현금으로 결제하고 입국심사 줄 서요.",
+        photos: [
+          { src: img("voa"), alt: "도착비자 카운터" },
+          { src: img("sea"), alt: "바탐 가는 바다" },
+        ],
+        price: "VOA 7일 Rp250,000",
+        warns: ["현금으로 결제하니까 미리 챙기기"],
+        map: "Batam Centre International Ferry Terminal",
+        move: { icon: "bike", text: "그랩 오토바이로 숙소까지 · 한 번에 약 7,200루피아" },
+      },
+      {
+        time: "체크인",
+        title: "바다 앞 숙소",
+        area: "부킹닷컴 예약", // TODO 숙소 이름
+        body: "1박 37,840원. 나오면 바로 바다예요.",
+        photos: [
+          { src: img("hotel"), alt: "숙소 로비" },
+          { src: img("beach"), alt: "숙소 앞 바다" },
+        ],
+        price: "1박 ₩37,840",
+        move: { icon: "walk", text: "숙소 근처 바닷가 카페로" },
+      },
+      {
+        time: "오후",
+        title: "바다 앞 카페 TNTREM",
+        area: "숙소 근처",
+        body: "바다 보면서 쉬기 좋은 카페. 음식은 진짜 매워요.",
+        photos: [{ src: img("cafe"), alt: "TNTREM 카페" }],
+        warns: ["음식이 매운 편이라 주문할 때 꼭 확인"],
+        map: "TNTREM Beachfront Cafe Batam",
+        move: { icon: "bike", text: "그랩 오토바이로 나고야 지역까지" },
+      },
+      {
+        time: "저녁",
+        title: "나고야 푸드코트",
+        area: "Nagoya",
+        body: "야외 라이브 공연에 현지인들로 꽉 찬 푸드코트. 맥주 한 병 시켜두고 구경하는 게 바탐 밤 코스.",
+        photos: [{ src: img("nagoya"), alt: "나고야 푸드코트" }],
+        map: "Nagoya Foodcourt Batam",
+        night: true,
+        move: { icon: "bike", text: "그랩으로 숙소 복귀" },
+      },
+      {
+        time: "다음날",
+        title: "페리로 싱가포르 → 공항",
+        area: "바탐센터 → 하버프론트",
+        body: "같은 왕복 표로 하버프론트 복귀. 시간 남으면 창이공항 쥬얼 들렀다 출국.",
+        photos: [{ src: img("return-ferry"), alt: "돌아오는 페리" }],
+        map: "Jewel Changi Airport",
+        night: true,
+      },
+    ],
+    budget: [
+      { item: "왕복 페리", cost: "S$85.75" },
+      { item: "도착비자 7일", cost: "Rp250,000" },
+      { item: "숙소 1박", cost: "₩37,840" },
+      { item: "그랩 오토바이 (1회)", cost: "약 Rp7,200" },
+      { item: "합계 (식비 별도)", cost: "약 15만원", strong: true },
+    ],
+    checklist: [
+      "왕복 페리 온라인 예매",
+      "All Indonesia 입국신고서 (도착 3일 전부터)",
+      "도착비자용 현금",
+      "그랩 앱 (싱가포르에서 쓰던 그대로)",
+      "여권 유효기간 6개월 이상",
+    ],
+  },
+};

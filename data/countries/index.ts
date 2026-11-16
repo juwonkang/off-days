@@ -1,20 +1,13 @@
 import type { Country } from "../types";
 import { singapore } from "./singapore";
 import { shanghai } from "./shanghai";
+import { batam } from "./batam";
 
 // 홈 화면 카드 순서 = 이 배열 순서
 // 다음 나라 공개할 땐 singapore.ts 복사해서 만들고 status: "live" 로 바꾸면 돼요.
 export const countries: Country[] = [
   singapore,
-  {
-    slug: "batam",
-    name: "바탐",
-    nameEn: "Batam",
-    flag: "🇮🇩",
-    status: "soon",
-    accent: "from-[#0f766e] to-[#14b8a6]",
-    tagline: "싱가포르에서 페리 타고 1시간, 하루 숙박비 3만원대",
-  },
+  batam,
   shanghai,
   {
     slug: "nha-trang",

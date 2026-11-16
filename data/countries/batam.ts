@@ -14,12 +14,12 @@ export const batam: Country = {
   tagline: "싱가포르는 하루면 충분, 남은 하루는 배 타고 인도네시아",
   period: "2026.04 · 싱가포르에서 1박",
   leave: "싱가포르 일정 중 하루",
-  chips: ["페리 50분", "숙소 1박 3만원대", "그랩 한 번 500원"],
+  chips: ["페리 50분", "숙소 1박 ₩34,110", "그랩 한 번 500원"],
   reelUrl: "https://www.instagram.com/juwon_ick/reels/", // TODO 바탐 릴스 주소로
   facts: [
     { label: "페리", value: "50분", note: "하버프론트 ↔ 바탐센터" },
     { label: "왕복 페리", value: "S$85.75", note: "온라인 예매 · 실제 결제" },
-    { label: "숙소 1박", value: "₩37,840", note: "부킹닷컴 · 앞이 바로 바다" },
+    { label: "숙소 1박", value: "₩34,110", note: "아욜라 시그니처 오카리나 · 수영장" },
     { label: "시차", value: "-1시간", note: "바탐이 싱가포르보다 1시간 느려요" },
   ],
   tips: [
@@ -38,6 +38,11 @@ export const batam: Country = {
       title: "입국신고서는 미리 온라인",
       body: "All Indonesia 입국신고서는 도착 3일 전부터 온라인으로 작성할 수 있어요. 배 타기 전에 해두면 편해요.",
       photo: { src: img("ferry-wake"), alt: "페리 뒤로 이는 물살" },
+    },
+    {
+      title: "숙소는 오카리나 바닷가 쪽",
+      body: "아욜라 시그니처 오카리나 바탐. 오카리나 공원 바로 앞(도보 2분)이라 나오면 바다예요. 야외 수영장 있고, 바탐센터 차로 11분 · 나고야 차로 16분. 1박 ₩34,110.",
+      photo: { src: img("hotel"), alt: "아욜라 시그니처 오카리나 바탐" },
     },
     {
       title: "이동은 그랩 오토바이",
@@ -103,14 +108,15 @@ export const batam: Country = {
       },
       {
         time: "체크인",
-        title: "바다 앞 숙소",
-        area: "부킹닷컴 예약", // TODO 숙소 이름
-        body: "1박 37,840원. 나오면 바로 바다예요.",
+        title: "아욜라 시그니처 오카리나 바탐",
+        area: "Ayola Signature Ocarina Batam · 오카리나",
+        body: "오카리나 공원 바로 앞(도보 2분)이라 나오면 바로 바다. 야외 수영장 있어요. 체크인 14:00 · 체크아웃 12:00. 바탐센터 차로 11분, 나고야 힐 몰 차로 16분, 공항 차로 29분.",
         photos: [
           { src: img("hotel"), alt: "숙소 로비" },
           { src: img("beach"), alt: "숙소 앞 바다" },
         ],
-        price: "1박 ₩37,840",
+        price: "1박 ₩34,110",
+        map: "Ayola Signature Ocarina Batam",
         move: { icon: "walk", text: "숙소 근처 바닷가 카페로" },
       },
       {
@@ -146,7 +152,7 @@ export const batam: Country = {
     budget: [
       { item: "왕복 페리", cost: "S$85.75" },
       { item: "도착비자 7일", cost: "Rp250,000" },
-      { item: "숙소 1박", cost: "₩37,840" },
+      { item: "숙소 1박 (아욜라 오카리나)", cost: "₩34,110" },
       { item: "그랩 오토바이 (1회)", cost: "약 Rp7,200" },
       { item: "합계 (식비 별도)", cost: "약 15만원", strong: true },
     ],
